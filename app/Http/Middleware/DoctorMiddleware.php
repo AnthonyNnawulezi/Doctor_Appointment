@@ -16,9 +16,10 @@ class DoctorMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user() && Auth::user()->role === 'doctor') {
-            return $next($request);
+        if ($request->user()?->role !== 'patient') {
+            abort(403);
         }
-        redirect('/403');
+
+        return $next($request);
     }
 }
