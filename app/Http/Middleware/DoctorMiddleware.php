@@ -16,7 +16,7 @@ class DoctorMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if ($request->user()?->role !== 'patient') {
+        if ($request->user()?->role !== 'doctor') {
             abort(403);
         }
 
