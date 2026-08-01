@@ -1,9 +1,10 @@
+@import "preline/variants.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Preline UI */
-@import "preline/variants.css";
 
 /* @layer utilities {
     .bg-primary {
