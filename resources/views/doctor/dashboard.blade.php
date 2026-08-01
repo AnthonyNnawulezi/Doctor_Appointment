@@ -1,7 +1,4 @@
 <x-app-layout>
-    <h1>You're currently logged in as Doctor</h1>
-</x-app-layout>
-<x-app-layout>
     <x-slot name="header">
         <livewire:navigation-bar />
         <h2 class="text-xl font-semibold leading-tight text-gray-800">
