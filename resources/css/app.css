@@ -4,3 +4,10 @@
 
 /* Preline UI */
 @import "preline/variants.css";
+
+/* @layer utilities {
+    .bg-primary {
+        --tw-bg-opacity: 1;
+        background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+    }
+} */

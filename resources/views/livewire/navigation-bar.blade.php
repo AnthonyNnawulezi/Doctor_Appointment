@@ -29,14 +29,14 @@
                 class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block"
                 aria-labelledby="hs-navbar-primary-collapse" role="region">
                 <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                    <a href="#"
-                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                        Log in
-                    </a>
-                    <a href="#"
-                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                        Register
-                    </a>
+                    <a class="text-sm font-medium text-foreground-inverse focus:outline-hidden" href="#"
+                        aria-current="page">Landing</a>
+                    <a class="text-sm text-foreground-inverse/70 hover:text-foreground-inverse focus:outline-hidden focus:text-foreground-inverse"
+                        href="#">Account</a>
+                    <a class="text-sm text-foreground-inverse/70 hover:text-foreground-inverse focus:outline-hidden focus:text-foreground-inverse"
+                        href="#">Work</a>
+                    <a class="text-sm text-foreground-inverse/70 hover:text-foreground-inverse focus:outline-hidden focus:text-foreground-inverse"
+                        href="#">Blog</a>
                 </div>
             </div>
         </nav>
