@@ -25,6 +25,7 @@
                 <main class="mt-6">
                     <!-- Hero -->
                     <livewire:herosection />
+                    <livewire:featured-doctors />
                     <!-- End Hero -->
                 </main>
 
