@@ -1,14 +1,5 @@
-@import "preline/variants.css";
+@import "../../node_modules/preline/variants.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Preline UI */
-
-/* @layer utilities {
-    .bg-primary {
-        --tw-bg-opacity: 1;
-        background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-    }
-} */
