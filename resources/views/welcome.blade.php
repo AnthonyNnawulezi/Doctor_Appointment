@@ -26,6 +26,8 @@
                     <!-- Hero -->
                     <livewire:herosection />
                     <livewire:featured-doctors />
+                    <livewire:specialist-cards />
+                    <livewire:articles />
                     <!-- End Hero -->
                 </main>
 

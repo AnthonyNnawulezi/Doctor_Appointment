@@ -1,16 +1,17 @@
 <!-- Card Blog -->
-<div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
     <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
-        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-foreground">Read our latest news</h2>
-        <p class="mt-1 text-muted-foreground-2">We've helped some great companies brand, design and get to market.</p>
+        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-gray-800">Read our latest news</h2>
+        <p class="mt-1 text-gray-500">We've helped some great people receive great treatment faster and
+            effectively.</p>
     </div>
     <!-- End Title -->
 
     <!-- Grid -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
         <!-- Card -->
-        <a class="group flex flex-col bg-layer border border-layer-line shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+        <a class="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
             href="#">
             <div class="aspect-video w-full overflow-hidden rounded-t-xl">
                 <img class="size-full object-cover"
@@ -18,10 +19,10 @@
                     alt="Blog Image">
             </div>
             <div class="p-4 md:p-5">
-                <p class="mt-2 text-xs uppercase text-muted-foreground-2">
+                <p class="mt-2 text-xs uppercase text-gray-500">
                     Product
                 </p>
-                <h3 class="mt-2 text-lg font-medium text-foreground group-hover:text-primary-hover">
+                <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600-hover">
                     Better is when everything works together
                 </h3>
             </div>
@@ -29,7 +30,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group flex flex-col bg-layer border border-layer-line shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+        <a class="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
             href="#">
             <div class="aspect-video w-full overflow-hidden rounded-t-xl">
                 <img class="size-full object-cover"
@@ -37,10 +38,10 @@
                     alt="Blog Image">
             </div>
             <div class="p-4 md:p-5">
-                <p class="mt-2 text-xs uppercase text-muted-foreground-2">
+                <p class="mt-2 text-xs uppercase text-gray-500">
                     Business
                 </p>
-                <h3 class="mt-2 text-lg font-medium text-foreground group-hover:text-primary-hover">
+                <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600-hover">
                     What CFR really is about
                 </h3>
             </div>
@@ -48,7 +49,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group flex flex-col bg-layer border border-layer-line shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+        <a class="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
             href="#">
             <div class="aspect-video w-full overflow-hidden rounded-t-xl">
                 <img class="size-full object-cover"
@@ -56,10 +57,10 @@
                     alt="Blog Image">
             </div>
             <div class="p-4 md:p-5">
-                <p class="mt-2 text-xs uppercase text-muted-foreground-2">
+                <p class="mt-2 text-xs uppercase text-gray-500">
                     Business
                 </p>
-                <h3 class="mt-2 text-lg font-medium text-foreground group-hover:text-primary-hover">
+                <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600-hover">
                     Should Product Owners think like entrepreneurs?
                 </h3>
             </div>
@@ -67,7 +68,7 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group flex flex-col bg-layer border border-layer-line shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition"
+        <a class="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
             href="#">
             <div class="aspect-video w-full overflow-hidden rounded-t-xl">
                 <img class="size-full object-cover"
@@ -75,10 +76,10 @@
                     alt="Blog Image">
             </div>
             <div class="p-4 md:p-5">
-                <p class="mt-2 text-xs uppercase text-muted-foreground-2">
+                <p class="mt-2 text-xs uppercase text-gray-500">
                     Facilitate
                 </p>
-                <h3 class="mt-2 text-lg font-medium text-foreground group-hover:text-primary-hover">
+                <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600-hover">
                     Announcing Front Strategies: Ready-to-use rules
                 </h3>
             </div>
@@ -89,12 +90,12 @@
 
     <!-- Card -->
     <div class="text-center">
-        <div class="inline-block bg-layer border border-gray-200 shadow-2xs rounded-full">
+        <div class="inline-block bg-white border border-gray-200 shadow-sm rounded-full">
             <div class="py-3 px-4 flex items-center gap-x-2">
-                <p class="text-muted-foreground-2">
+                <p class="text-gray-500">
                     Want to read more?
                 </p>
-                <a class="inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                <a class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                     href="#">
                     Go here
                     <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
