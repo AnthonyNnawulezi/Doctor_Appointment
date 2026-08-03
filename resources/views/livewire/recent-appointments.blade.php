@@ -11,10 +11,10 @@
                         class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-b border-table-line">
                         <div>
                             <h2 class="text-xl font-semibold text-foreground">
-                                Doctors
+                                Appointments
                             </h2>
                             <p class="text-sm text-muted-foreground-2">
-                                Our registered Doctors.
+                                View your Appointments.
                             </p>
                         </div>
 
