@@ -37,6 +37,9 @@ new class extends Component {
                         <x-nav-link :href="route('doctor.dashboard')" :active="request()->routeIs('doctor.dashboard')" wire:navigate>
                             {{ __('Doctor Dashboard') }}
                         </x-nav-link>
+                        {{-- <x-nav-link :href="route('doctor.dashboard')" :active="request()->routeIs('doctor.dashboard')" wire:navigate>
+                            {{ __('Doctor Dashboard') }}
+                        </x-nav-link> --}}
                     @elseif (auth()->user()?->role === 'admin')
                         <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')" wire:navigate>
                             {{ __('Admin Dashboard') }}
