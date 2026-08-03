@@ -1,31 +1,31 @@
 <!-- Table Section -->
-<div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div class="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Card -->
     <div class="flex flex-col">
         <div
             class="overflow-x-auto [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-none [&::-webkit-scrollbar-track]:bg-scrollbar-track [&::-webkit-scrollbar-thumb]:bg-scrollbar-thumb">
             <div class="min-w-full inline-block align-middle">
-                <div class="bg-layer border border-layer-line rounded-xl shadow-2xs overflow-hidden">
+                <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
                     <!-- Header -->
                     <div
-                        class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-b border-table-line">
+                        class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-b border-gray-200">
                         <div>
-                            <h2 class="text-xl font-semibold text-foreground">
+                            <h2 class="text-xl font-semibold text-gray-900">
                                 Doctors
                             </h2>
-                            <p class="text-sm text-muted-foreground-2">
+                            <p class="text-sm text-gray-600">
                                 Our Registered Doctors.
                             </p>
                         </div>
 
                         <div>
                             <div class="inline-flex gap-x-2">
-                                <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-layer border border-layer-line text-layer-foreground shadow-2xs hover:bg-layer-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-layer-focus"
+                                <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-white border border-gray-200 text-layer-foreground shadow-sm hover:bg-white-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-white-focus"
                                     href="#">
                                     View all
                                 </a>
 
-                                <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-primary border border-primary-line text-primary-foreground hover:bg-primary-hover focus:outline-hidden focus:bg-primary-focus disabled:opacity-50 disabled:pointer-events-none"
+                                <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-primary border border-primary-line text-primary-foreground hover:bg-primary-hover focus:outline-none focus:bg-primary-focus disabled:opacity-50 disabled:pointer-events-none"
                                     href="#">
                                     <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -47,7 +47,7 @@
                                 <th scope="col" class="ps-6 pe-3 py-3 text-start">
                                     <label for="hs-at-with-checkboxes-main" class="flex">
                                         <input type="checkbox"
-                                            class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                            class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                             id="hs-at-with-checkboxes-main">
                                         <span class="sr-only">Checkbox</span>
                                     </label>
@@ -55,7 +55,7 @@
 
                                 <th scope="col" class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3 text-start">
                                     <div class="flex items-center gap-x-2">
-                                        <span class="text-xs font-semibold uppercase text-foreground">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
                                             Name
                                         </span>
                                     </div>
@@ -63,7 +63,7 @@
 
                                 <th scope="col" class="px-6 py-3 text-start">
                                     <div class="flex items-center gap-x-2">
-                                        <span class="text-xs font-semibold uppercase text-foreground">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
                                             Position
                                         </span>
                                     </div>
@@ -71,7 +71,7 @@
 
                                 <th scope="col" class="px-6 py-3 text-start">
                                     <div class="flex items-center gap-x-2">
-                                        <span class="text-xs font-semibold uppercase text-foreground">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
                                             Status
                                         </span>
                                     </div>
@@ -79,7 +79,7 @@
 
                                 <th scope="col" class="px-6 py-3 text-start">
                                     <div class="flex items-center gap-x-2">
-                                        <span class="text-xs font-semibold uppercase text-foreground">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
                                             Portfolio
                                         </span>
                                     </div>
@@ -87,7 +87,7 @@
 
                                 <th scope="col" class="px-6 py-3 text-start">
                                     <div class="flex items-center gap-x-2">
-                                        <span class="text-xs font-semibold uppercase text-foreground">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
                                             Created
                                         </span>
                                     </div>
@@ -103,7 +103,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-1" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-1">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -112,22 +112,21 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Christina
+                                                <span class="block text-sm font-semibold text-gray-900">Christina
                                                     Bersh</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">christina@site.com</span>
+                                                <span class="block text-sm text-gray-500">christina@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Director</span>
-                                        <span class="block text-sm text-muted-foreground-1">Human resources</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Director</span>
+                                        <span class="block text-sm text-gray-500">Human resources</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -146,7 +145,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">1/5</span>
+                                            <span class="text-xs text-gray-500">1/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -157,12 +156,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">28 Dec, 12:12</span>
+                                        <span class="text-sm text-gray-500">28 Dec, 12:12</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -175,7 +174,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-2" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-2">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -184,22 +183,21 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">David
+                                                <span class="block text-sm font-semibold text-gray-900">David
                                                     Harrison</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">david@site.com</span>
+                                                <span class="block text-sm text-gray-500">david@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Seller</span>
-                                        <span class="block text-sm text-muted-foreground-1">Branding products</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Seller</span>
+                                        <span class="block text-sm text-gray-500">Branding products</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -218,7 +216,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">3/5</span>
+                                            <span class="text-xs text-gray-500">3/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 78%" aria-valuenow="78"
@@ -229,12 +227,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">20 Dec, 09:27</span>
+                                        <span class="text-sm text-gray-500">20 Dec, 09:27</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -247,7 +245,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-3" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-3">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -257,22 +255,21 @@
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
                                             <span
-                                                class="inline-flex items-center justify-center size-9.5 rounded-full bg-layer border border-layer-line">
-                                                <span class="font-medium text-sm text-foreground">A</span>
+                                                class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-white border border-gray-200">
+                                                <span class="font-medium text-sm text-gray-900">A</span>
                                             </span>
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Anne
+                                                <span class="block text-sm font-semibold text-gray-900">Anne
                                                     Richard</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">anne@site.com</span>
+                                                <span class="block text-sm text-gray-500">anne@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Designer</span>
-                                        <span class="block text-sm text-muted-foreground-1">IT department</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Designer</span>
+                                        <span class="block text-sm text-gray-500">IT department</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -291,7 +288,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">5/5</span>
+                                            <span class="text-xs text-gray-500">5/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 100%" aria-valuenow="100"
@@ -302,12 +299,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">18 Dec, 15:20</span>
+                                        <span class="text-sm text-gray-500">18 Dec, 15:20</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -320,7 +317,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-4" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-4">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -329,23 +326,22 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Samia
+                                                <span class="block text-sm font-semibold text-gray-900">Samia
                                                     Kartoon</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">samia@site.com</span>
+                                                <span class="block text-sm text-gray-500">samia@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Executive
+                                        <span class="block text-sm font-semibold text-gray-900">Executive
                                             director</span>
-                                        <span class="block text-sm text-muted-foreground-1">Marketing</span>
+                                        <span class="block text-sm text-gray-500">Marketing</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -364,7 +360,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">0/5</span>
+                                            <span class="text-xs text-gray-500">0/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 1%" aria-valuenow="1"
@@ -375,12 +371,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">18 Dec, 15:20</span>
+                                        <span class="text-sm text-gray-500">18 Dec, 15:20</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -393,7 +389,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-5" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-5">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -403,22 +399,21 @@
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
                                             <span
-                                                class="inline-flex items-center justify-center size-9.5 rounded-full bg-layer border border-layer-line">
-                                                <span class="font-medium text-sm text-foreground">D</span>
+                                                class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-white border border-gray-200">
+                                                <span class="font-medium text-sm text-gray-900">D</span>
                                             </span>
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">David
+                                                <span class="block text-sm font-semibold text-gray-900">David
                                                     Harrison</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">david@site.com</span>
+                                                <span class="block text-sm text-gray-500">david@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Developer</span>
-                                        <span class="block text-sm text-muted-foreground-1">Mobile app</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Developer</span>
+                                        <span class="block text-sm text-gray-500">Mobile app</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -437,7 +432,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">3/5</span>
+                                            <span class="text-xs text-gray-500">3/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 78%" aria-valuenow="78"
@@ -448,12 +443,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">15 Dec, 14:41</span>
+                                        <span class="text-sm text-gray-500">15 Dec, 14:41</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -466,7 +461,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-6" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-6">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -475,22 +470,21 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Brian
+                                                <span class="block text-sm font-semibold text-gray-900">Brian
                                                     Halligan</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">brian@site.com</span>
+                                                <span class="block text-sm text-gray-500">brian@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Accountant</span>
-                                        <span class="block text-sm text-muted-foreground-1">Finance</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Accountant</span>
+                                        <span class="block text-sm text-gray-500">Finance</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -509,7 +503,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">2/5</span>
+                                            <span class="text-xs text-gray-500">2/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 40%" aria-valuenow="40"
@@ -520,12 +514,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">11 Dec, 18:51</span>
+                                        <span class="text-sm text-gray-500">11 Dec, 18:51</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -538,7 +532,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-7" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-7">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -547,22 +541,21 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1659482634023-2c4fda99ac0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2.5&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Andy
+                                                <span class="block text-sm font-semibold text-gray-900">Andy
                                                     Clerk</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">andy@site.com</span>
+                                                <span class="block text-sm text-gray-500">andy@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Director</span>
-                                        <span class="block text-sm text-muted-foreground-1">Human resources</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Director</span>
+                                        <span class="block text-sm text-gray-500">Human resources</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -581,7 +574,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">1/5</span>
+                                            <span class="text-xs text-gray-500">1/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -592,12 +585,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">28 Dec, 12:12</span>
+                                        <span class="text-sm text-gray-500">28 Dec, 12:12</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -610,7 +603,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-8" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-8">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -619,22 +612,21 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1601935111741-ae98b2b230b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Bart
+                                                <span class="block text-sm font-semibold text-gray-900">Bart
                                                     Simpson</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">Bart@site.com</span>
+                                                <span class="block text-sm text-gray-500">Bart@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Seller</span>
-                                        <span class="block text-sm text-muted-foreground-1">Branding products</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Seller</span>
+                                        <span class="block text-sm text-gray-500">Branding products</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -653,7 +645,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">3/5</span>
+                                            <span class="text-xs text-gray-500">3/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 78%" aria-valuenow="78"
@@ -664,12 +656,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">20 Dec, 09:27</span>
+                                        <span class="text-sm text-gray-500">20 Dec, 09:27</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -682,7 +674,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-9" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-9">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -692,22 +684,21 @@
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
                                             <span
-                                                class="inline-flex items-center justify-center size-9.5 rounded-full bg-layer border border-layer-line">
-                                                <span class="font-medium text-sm text-foreground">C</span>
+                                                class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-white border border-gray-200">
+                                                <span class="font-medium text-sm text-gray-900">C</span>
                                             </span>
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Camila
+                                                <span class="block text-sm font-semibold text-gray-900">Camila
                                                     Welters</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">cwelt@site.com</span>
+                                                <span class="block text-sm text-gray-500">cwelt@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Designer</span>
-                                        <span class="block text-sm text-muted-foreground-1">IT department</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Designer</span>
+                                        <span class="block text-sm text-gray-500">IT department</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -726,7 +717,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">5/5</span>
+                                            <span class="text-xs text-gray-500">5/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 100%" aria-valuenow="100"
@@ -737,12 +728,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">18 Dec, 15:20</span>
+                                        <span class="text-sm text-gray-500">18 Dec, 15:20</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -755,7 +746,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-10" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-10">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -764,22 +755,21 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Oliver
+                                                <span class="block text-sm font-semibold text-gray-900">Oliver
                                                     Schevich</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">oliver@site.com</span>
+                                                <span class="block text-sm text-gray-500">oliver@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Seller</span>
-                                        <span class="block text-sm text-muted-foreground-1">Branding products</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Seller</span>
+                                        <span class="block text-sm text-gray-500">Branding products</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -798,7 +788,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">3/5</span>
+                                            <span class="text-xs text-gray-500">3/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 78%" aria-valuenow="78"
@@ -809,12 +799,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">20 Dec, 09:27</span>
+                                        <span class="text-sm text-gray-500">20 Dec, 09:27</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -827,7 +817,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-11" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-11">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -837,22 +827,21 @@
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
                                             <span
-                                                class="inline-flex items-center justify-center size-9.5 rounded-full bg-layer border border-layer-line">
-                                                <span class="font-medium text-sm text-foreground">I</span>
+                                                class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-white border border-gray-200">
+                                                <span class="font-medium text-sm text-gray-900">I</span>
                                             </span>
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Inna
+                                                <span class="block text-sm font-semibold text-gray-900">Inna
                                                     Ivy</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">invy@site.com</span>
+                                                <span class="block text-sm text-gray-500">invy@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Designer</span>
-                                        <span class="block text-sm text-muted-foreground-1">IT department</span>
+                                        <span class="block text-sm font-semibold text-gray-900">Designer</span>
+                                        <span class="block text-sm text-gray-500">IT department</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -871,7 +860,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">5/5</span>
+                                            <span class="text-xs text-gray-500">5/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 100%" aria-valuenow="100"
@@ -882,12 +871,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">18 Dec, 15:20</span>
+                                        <span class="text-sm text-gray-500">18 Dec, 15:20</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -900,7 +889,7 @@
                                     <div class="ps-6 pe-3 py-3">
                                         <label for="hs-at-with-checkboxes-12" class="flex">
                                             <input type="checkbox"
-                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-2xs text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
+                                                class="shrink-0 size-4 bg-transparent border-line-3 rounded-sm shadow-sm text-primary focus:ring-0 focus:ring-offset-0 checked:bg-primary-checked checked:border-primary-checked disabled:opacity-50 disabled:pointer-events-none"
                                                 id="hs-at-with-checkboxes-12">
                                             <span class="sr-only">Checkbox</span>
                                         </label>
@@ -909,23 +898,22 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <img class="inline-block size-9.5 rounded-full"
+                                            <img class="inline-block h-10 w-10 rounded-full"
                                                 src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                                 alt="Avatar">
                                             <div class="grow">
-                                                <span class="block text-sm font-semibold text-foreground">Jessica
+                                                <span class="block text-sm font-semibold text-gray-900">Jessica
                                                     Williams</span>
-                                                <span
-                                                    class="block text-sm text-muted-foreground-1">myhairisred@site.com</span>
+                                                <span class="block text-sm text-gray-500">myhairisred@site.com</span>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="h-px w-72 whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="block text-sm font-semibold text-foreground">Executive
+                                        <span class="block text-sm font-semibold text-gray-900">Executive
                                             director</span>
-                                        <span class="block text-sm text-muted-foreground-1">Marketing</span>
+                                        <span class="block text-sm text-gray-500">Marketing</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
@@ -944,7 +932,7 @@
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
                                         <div class="flex items-center gap-x-3">
-                                            <span class="text-xs text-muted-foreground-1">0/5</span>
+                                            <span class="text-xs text-gray-500">0/5</span>
                                             <div class="flex w-full h-1.5 bg-surface-1 rounded-full overflow-hidden">
                                                 <div class="flex flex-col justify-center overflow-hidden bg-secondary"
                                                     role="progressbar" style="width: 1%" aria-valuenow="1"
@@ -955,12 +943,12 @@
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-3">
-                                        <span class="text-sm text-muted-foreground-1">18 Dec, 15:20</span>
+                                        <span class="text-sm text-gray-500">18 Dec, 15:20</span>
                                     </div>
                                 </td>
                                 <td class="size-px whitespace-nowrap">
                                     <div class="px-6 py-1.5">
-                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-hidden focus:underline font-medium"
+                                        <a class="inline-flex items-center gap-x-1 text-sm text-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                                             href="#">
                                             Edit
                                         </a>
@@ -973,17 +961,17 @@
 
                     <!-- Footer -->
                     <div
-                        class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-t border-layer-line">
+                        class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-t border-gray-200">
                         <div>
-                            <p class="text-sm text-muted-foreground-2">
-                                <span class="font-semibold text-foreground">12</span> results
+                            <p class="text-sm text-gray-600">
+                                <span class="font-semibold text-gray-900">12</span> results
                             </p>
                         </div>
 
                         <div>
                             <div class="inline-flex gap-x-2">
                                 <button type="button"
-                                    class="py-1.5 px-2.5 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg bg-layer border border-layer-line text-layer-foreground shadow-2xs hover:bg-layer-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-layer-focus">
+                                    class="py-1.5 px-2.5 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg bg-white border border-gray-200 text-layer-foreground shadow-sm hover:bg-white-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-white-focus">
                                     <svg class="shrink-0 size-4 -ms-1" xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -994,7 +982,7 @@
                                 </button>
 
                                 <button type="button"
-                                    class="py-1.5 px-2.5 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg bg-layer border border-layer-line text-layer-foreground shadow-2xs hover:bg-layer-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-layer-focus">
+                                    class="py-1.5 px-2.5 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg bg-white border border-gray-200 text-layer-foreground shadow-sm hover:bg-white-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-white-focus">
                                     Next
                                     <svg class="shrink-0 size-4 -me-1" xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none"

@@ -38,14 +38,14 @@ new class extends Component {
                             {{ __('Doctor Dashboard') }}
                         </x-nav-link>
                         <x-nav-link :href="route('doctor.doctor-listings')" :active="request()->routeIs('doctor-listings')" wire:navigate>
-                            {{ __('Doctor Dashboard') }}
+                            {{ __('Doctors') }}
                         </x-nav-link>
                     @elseif (auth()->user()?->role === 'admin')
                         <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')" wire:navigate>
                             {{ __('Admin Dashboard') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')" wire:navigate>
-                            {{ __('Admin Dashboard') }}
+                        <x-nav-link :href="route('admin.recent-appointments')" :active="request()->routeIs('admin.recent-appointments')" wire:navigate>
+                            {{ __('Recent Appointments') }}
                         </x-nav-link>
                     @endif
                 </div>
