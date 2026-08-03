@@ -17,12 +17,12 @@ Route::view('profile', 'profile')
 
 Route::group(['middleware' => "doctor"], function () {
     Route::get('doctor-dashboard', [DoctorController::class, 'loadDoctorDashboard'])->name('doctor.dashboard');
-    Route::get('doctor-listings', [DoctorController::class, 'loadDoctors'])->name('doctor.recent-appointments');
+    Route::get('doctor-listings', [DoctorController::class, 'loadDoctors'])->name('doctor.doctor-listings');
 });
 
 Route::group(['middleware' => 'admin'], function () {
     Route::get('admin-dashboard', [AdminController::class, 'loadAdminDashboard'])->middleware('admin')->name('admin.dashboard');
-    Route::get('recent-appointments', [AdminController::class, 'loadAppointments'])->middleware('admin')->name('admin.dashboard');
+    Route::get('recent-appointments', [AdminController::class, 'loadAppointments'])->middleware('admin')->name('admin.recent-appointments');
 });
 
 require __DIR__ . '/auth.php';
