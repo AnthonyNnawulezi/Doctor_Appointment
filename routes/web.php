@@ -21,7 +21,7 @@ Route::group(['middleware' => "doctor"], function () {
 
 Route::group(['middleware' => 'admin'], function () {
     Route::get('admin-dashboard', [AdminController::class, 'loadAdminDashboard'])->name('admin.dashboard');
-    Route::get('doctors', [AdminController::class, 'loadAppointments'])->name('admin.doctor-listings');
+    Route::get('/admin/doctors', [AdminController::class, 'loadAppointments'])->name('admin.doctor-listings');
     Route::get('/admin/doctor/create', [AdminController::class, 'doctorCreate'])->name('admin.create-doctor');
 });
 

@@ -38,7 +38,7 @@
 
         <!-- Specialities -->
         <div class="mt-4">
-            <x-input-label for="specialities" :value="__('Bio/About')" />
+            <x-input-label for="specialities" :value="__('Specialities')" />
 
             <select
                 class="py-3 px-4 pe-9 block w-full bg-layer border-layer-line rounded-lg text-sm text-foreground focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none">
@@ -103,9 +103,9 @@
 
 
         <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                href="{{ route('login') }}" wire:navigate>
-                {{ __('Already registered?') }}
+            <a href="/admin/doctors" type="button"
+                class="inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150">
+                Cancel
             </a>
 
             <x-primary-button class="ms-4">
