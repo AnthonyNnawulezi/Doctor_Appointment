@@ -21,8 +21,9 @@ Route::group(['middleware' => "doctor"], function () {
 });
 
 Route::group(['middleware' => 'admin'], function () {
-    Route::get('admin-dashboard', [AdminController::class, 'loadAdminDashboard'])->middleware('admin')->name('admin.dashboard');
-    Route::get('doctors', [AdminController::class, 'loadAppointments'])->middleware('admin')->name('admin.recent-appointments');
+    Route::get('admin-dashboard', [AdminController::class, 'loadAdminDashboard'])->name('admin.dashboard');
+    Route::get('doctors', [AdminController::class, 'loadAppointments'])->name('admin.recent-appointments');
+    Route::get('/admin/doctor/create', [AdminController::class, 'doctorCreate'])->name('admin.create-doctor');
 });
 
 require __DIR__ . '/auth.php';

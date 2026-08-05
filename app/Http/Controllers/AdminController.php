@@ -14,4 +14,8 @@ class AdminController extends Controller
     {
         return view('admin.recent-appointments');
     }
+    public function doctorCreate()
+    {
+        return view('admin.doctor-create');
+    }
 }
