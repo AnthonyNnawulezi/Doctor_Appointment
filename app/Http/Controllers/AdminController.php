@@ -12,7 +12,7 @@ class AdminController extends Controller
     }
     public function loadAppointments()
     {
-        return view('admin.recent-appointments');
+        return view('admin.doctor-listings');
     }
     public function doctorCreate()
     {
