@@ -42,7 +42,7 @@
 
             <select
                 class="py-3 px-4 pe-9 block w-full bg-layer border-layer-line rounded-lg text-sm text-foreground focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none">
-                <option selected>Open this select menu</option>
+                <option selected>Choose Speciality</option>
                 <option>1</option>
 
             </select>
