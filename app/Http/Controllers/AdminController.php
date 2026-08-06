@@ -28,6 +28,6 @@ class AdminController extends Controller
 
     public function loadSpecialityForm()
     {
-        return view('admin.speciality-form');
+        return view('admin.speciality-create');
     }
 }

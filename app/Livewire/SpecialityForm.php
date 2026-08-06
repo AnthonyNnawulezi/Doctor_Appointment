@@ -6,9 +6,13 @@ use Livewire\Component;
 
 class SpecialityForm extends Component
 {
-    public function register()
+    public $name = "";
+
+    public function save()
     {
-        // return view('livewire.speciality-form');
+        $this->validate([
+            'name' => 'required',
+        ]);
     }
 
     public function render()

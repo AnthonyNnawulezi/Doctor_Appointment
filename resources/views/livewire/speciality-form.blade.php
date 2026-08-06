@@ -1,11 +1,11 @@
 <div>
-    <form wire:submit="register">
+    <form wire:submit="save">
         <!-- Name -->
         <div>
             <x-input-label for="speciality" :value="__('Speciality')" />
-            <x-text-input wire:model="speciality" id="speciality" class="block mt-1 w-full" type="text"
-                speciality="speciality" required autofocus autocomplete="speciality" />
-            <x-input-error :messages="$errors->get('speciality')" class="mt-2" />
+            <x-text-input wire:model="name" id="speciality" class="block mt-1 w-full" type="text" name="name" autofocus
+                autocomplete="speciality" />
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <div class="flex items-center justify-end mt-4">
@@ -15,7 +15,7 @@
             </a>
 
             <x-primary-button class="ms-4">
-                {{ __('Register') }}
+                {{ __('Save') }}
             </x-primary-button>
         </div>
     </form>
