@@ -10,12 +10,19 @@ class AdminController extends Controller
     {
         return view('admin.dashboard');
     }
+
     public function loadAppointments()
     {
         return view('admin.doctor-listings');
     }
+
     public function doctorCreate()
     {
         return view('admin.doctor-create');
+    }
+
+    public function loadSpecialities()
+    {
+        return view('admin.specialities');
     }
 }
