@@ -46,29 +46,30 @@
                     <!-- Table -->
                     <table class="min-w-full divide-y divide-table-line">
                         <thead class="bg-muted">
-                            <th scope="col" class="px-6 py-3 text-start">
-                                <div class="flex items-center gap-x-2">
-                                    <span class="text-xs font-semibold uppercase text-gray-900">
-                                        S/N
-                                    </span>
-                                </div>
-                            </th>
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-start">
+                                    <div class="flex items-center gap-x-2">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
+                                            S/N
+                                        </span>
+                                    </div>
+                                </th>
 
-                            <th scope="col" class="px-6 py-3 text-start">
-                                <div class="flex items-center gap-x-2">
-                                    <span class="text-xs font-semibold uppercase text-gray-900">
-                                        SPECIALITY NAME
-                                    </span>
-                                </div>
-                            </th>
+                                <th scope="col" class="px-6 py-3 text-start">
+                                    <div class="flex items-center gap-x-2">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
+                                            SPECIALITY NAME
+                                        </span>
+                                    </div>
+                                </th>
 
-                            <th scope="col" class="px-6 py-3 text-start">
-                                <div class="flex items-center gap-x-2">
-                                    <span class="text-xs font-semibold uppercase text-gray-900">
-                                        ACTIONS
-                                    </span>
-                                </div>
-                            </th>
+                                <th scope="col" colspan="2" class="px-6 py-3 text-start">
+                                    <div class="flex items-center gap-x-2">
+                                        <span class="text-xs font-semibold uppercase text-gray-900">
+                                            ACTIONS
+                                        </span>
+                                    </div>
+                                </th>
                             </tr>
                         </thead>
 
