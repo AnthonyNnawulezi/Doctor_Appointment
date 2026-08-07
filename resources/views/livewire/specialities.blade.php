@@ -73,7 +73,7 @@
                         </thead>
 
                         <tbody class="divide-y divide-table-line">
-                            @if (count() > 0)
+                            @if (count($specialities) > 0)
                                 @foreach ($specialities as $speciality)
                                     <tr>
 
