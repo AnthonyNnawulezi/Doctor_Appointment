@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Specialities;
 use Livewire\Component;
 
 class SpecialityForm extends Component
@@ -13,6 +14,13 @@ class SpecialityForm extends Component
         $this->validate([
             'name' => 'required',
         ]);
+
+        $speciality = new Specialities;
+        $speciality->speciality_name = $this->name;
+
+        session()->flash('message', "Speciality created successfully");
+
+        return redirect('/admin/specialities');
     }
 
     public function render()
