@@ -8,19 +8,25 @@ use Livewire\Component;
 class EditSpeciality extends Component
 {
     public $name = "";
-    public $speciality = "";
+    public $speciality_id = "";
 
-    public function editSpeciality($id)
+    public function mount($speciality_id)
+    {
+        $speciality = Specialities::findOrFail($speciality_id);
+
+        $this->speciality_id = $speciality->id;
+        $this->name = $speciality->speciality_name;
+    }
+
+    public function update()
     {
         $this->validate([
             'name' => 'required',
         ]);
 
-        $this->speciality = $this->name;
-
-        $update = Specialities::find($id);
-        $update->speciality_name = $this->speciality;
-        $update->save();
+        $speciality = Specialities::findOrFail($this->speciality_id);
+        $speciality->speciality_name = $this->name;
+        $speciality->save();
 
         session()->flash('message', 'Speciality updated successfully');
         return redirect('/admin/specialities');
