@@ -94,13 +94,13 @@
                                         </td>
 
                                         <td class="size-px whitespace-nowrap" colspan="2">
-                                            <a type="button" href="/admin/edit/{{ $speciality_id }}/speciality"
-                                                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                            <a type="button" href="/admin/edit/{{ $speciality->id }}/speciality"
+                                                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
                                                 Edit
                                             </a>
                                         </td>
                                         <td class="size-px whitespace-nowrap">
-                                            <a type="button" href="/admin/delete/{{ $speciality_id }}/speciality"
+                                            <a type="button" href="/admin/delete/{{ $speciality->id }}/speciality"
                                                 class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-red-500 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
                                                 Delete
                                             </a>

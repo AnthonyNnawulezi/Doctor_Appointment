@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Specialities;
 use Illuminate\Http\Request;
 use Livewire\Component;
 

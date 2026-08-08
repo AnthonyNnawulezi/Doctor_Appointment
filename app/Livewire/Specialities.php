@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Specialities as ModelsSpecialities;
 use Livewire\Component;
 
 class Specialities extends Component
@@ -9,7 +10,7 @@ class Specialities extends Component
 
     public function render()
     {
-        $specialities = Specialities::all();
+        $specialities = ModelsSpecialities::all();
 
         return view('livewire.specialities', ['specialities' => $specialities]);
     }
