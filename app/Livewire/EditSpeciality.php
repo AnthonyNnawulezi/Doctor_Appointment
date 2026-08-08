@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Models\Specialities;
-use Illuminate\Http\Request;
 use Livewire\Component;
 
 class EditSpeciality extends Component
@@ -27,13 +26,7 @@ class EditSpeciality extends Component
         return redirect('/admin/specialities');
     }
 
-    public function deleteSpeciality(Specialities $speciality, Request $request)
-    {
-        $speciality->delete($request);
-        session()->flash('message', 'Speciality deleted successfully');
 
-        return redirect('/admin/specialities');
-    }
 
     public function render()
     {

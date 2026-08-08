@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Specialities;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -29,5 +30,18 @@ class AdminController extends Controller
     public function loadSpecialityForm()
     {
         return view('admin.speciality-create');
+    }
+
+    public function editSpeciality($speciality_id)
+    {
+        return view('admin.edit-speciality', compact('speciality_id'));
+    }
+
+    public function deleteSpeciality(Specialities $speciality, Request $request)
+    {
+        $speciality->delete($request);
+        session()->flash('message', 'Speciality deleted successfully');
+
+        return redirect('/admin/specialities');
     }
 }
