@@ -17,6 +17,7 @@ class SpecialityForm extends Component
 
         $speciality = new Specialities;
         $speciality->speciality_name = $this->name;
+        $speciality->save();
 
         session()->flash('message', "Speciality created successfully");
 

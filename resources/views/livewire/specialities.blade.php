@@ -1,9 +1,9 @@
 <!-- Table Section -->
 <div class="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     @if (session()->has('message'))
-        <div class="bg-teal-500 text-sm text-foreground-inverse rounded-lg p-4" role="alert" tabindex="-1"
+        <div class="bg-green-500 text-sm text-foreground-inverse rounded-lg p-4" role="alert" tabindex="-1"
             aria-labelledby="hs-solid-color-success-label">
-            <span id="hs-solid-color-success-label" class="font-bold">Success</span> {{ message }}
+            <span id="hs-solid-color-success-label" class="font-bold">Success</span> {{ session('message') }}
         </div>
     @endif
     <!-- Card -->
@@ -107,6 +107,8 @@
                                         </td>
                                     </tr>
                                 @endforeach
+                            @else
+                                <p>No data found</p>
                             @endif
                         </tbody>
                     </table>
