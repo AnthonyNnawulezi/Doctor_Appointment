@@ -3,13 +3,17 @@
 namespace App\Livewire;
 
 use App\Models\Specialities as ModelsSpecialities;
+use App\Models\Speciality;
+use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
 class Specialities extends Component
 {
-    public function delete(int $id): void
+    public function delete(Speciality $speciality): void
     {
-        $speciality = ModelsSpecialities::findOrFail($id);
+        // Gate::authorize('delete', $speciality);
+        $this->authorize('delete', $speciality);
+        $speciality = ModelsSpecialities::findOrFail($speciality);
         $speciality->delete();
 
         session()->flash('message', 'Speciality deleted successfully');
