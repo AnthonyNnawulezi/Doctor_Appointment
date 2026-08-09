@@ -23,7 +23,7 @@ class Specialities extends Component
         }
 
         session()->flash('message', 'Speciality deleted successfully');
-        $this->redirect('/admin/specialities', navigate: true);
+        // $this->redirect('/admin/specialities', navigate: true); removed since its the same page
     }
 
     public function render()
