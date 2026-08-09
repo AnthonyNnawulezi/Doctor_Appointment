@@ -7,13 +7,13 @@ use Livewire\Component;
 
 class Specialities extends Component
 {
-    public function delete($id)
+    public function delete(int $id): void
     {
         $speciality = ModelsSpecialities::findOrFail($id);
         $speciality->delete();
 
         session()->flash('message', 'Speciality deleted successfully');
-        return $this->redirect('/admin/specialities', navigate: true);
+        $this->redirect('/admin/specialities', navigate: true);
     }
 
     public function render()
