@@ -2,14 +2,16 @@
 
 namespace App\Livewire;
 
-use App\Models\Specialities as ModelsSpecialities;
 use App\Models\Speciality;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Specialities extends Component
 {
+    use AuthorizesRequests;
+
     public function delete(Speciality $speciality): void
     {
         // Gate::authorize('delete', $speciality);
