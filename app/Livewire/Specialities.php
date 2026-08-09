@@ -7,6 +7,13 @@ use Livewire\Component;
 
 class Specialities extends Component
 {
+    public function delete($id)
+    {
+        $speciality = ModelsSpecialities::findOrFail($id);
+        $speciality->delete();
+
+        session()->flash('message', 'Speciality deleted successfully');
+    }
 
     public function render()
     {

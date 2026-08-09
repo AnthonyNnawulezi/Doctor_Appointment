@@ -32,8 +32,6 @@ class EditSpeciality extends Component
         return redirect('/admin/specialities');
     }
 
-
-
     public function render()
     {
         return view('livewire.edit-speciality');

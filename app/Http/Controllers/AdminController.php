@@ -36,12 +36,4 @@ class AdminController extends Controller
     {
         return view('admin.edit-speciality', compact('speciality_id'));
     }
-
-    public function deleteSpeciality(Specialities $speciality, Request $request)
-    {
-        $speciality->delete($request);
-        session()->flash('message', 'Speciality deleted successfully');
-
-        return redirect('/admin/specialities');
-    }
 }

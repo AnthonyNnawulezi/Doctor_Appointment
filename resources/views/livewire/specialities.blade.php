@@ -100,10 +100,12 @@
                                             </a>
                                         </td>
                                         <td class="size-px whitespace-nowrap">
-                                            <a type="button" href="/admin/delete/{{ $speciality->id }}/speciality"
+                                            <button type="button" wire:click="delete({{ $speciality->id }})"
+                                                wire:confirm="Are you sure you want to delete this speciality?"
                                                 class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-red-500 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
                                                 Delete
-                                            </a>
+                                            </button>
+
                                         </td>
                                     </tr>
                                 @endforeach
