@@ -47,24 +47,24 @@
                     <table class="min-w-full divide-y divide-table-line">
                         <thead class="bg-muted">
                             <tr>
-                                <th scope="col" class="px-6 py-3 text-start">
-                                    <div class="flex items-center gap-x-2">
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    <div class="flex justify-center gap-x-2">
                                         <span class="text-xs font-semibold uppercase text-gray-900">
                                             S/N
                                         </span>
                                     </div>
                                 </th>
 
-                                <th scope="col" class="px-6 py-3 text-start">
-                                    <div class="flex items-center gap-x-2">
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    <div class="flex justify-center gap-x-2">
                                         <span class="text-xs font-semibold uppercase text-gray-900">
                                             SPECIALITY NAME
                                         </span>
                                     </div>
                                 </th>
 
-                                <th scope="col" colspan="2" class="px-6 py-3 text-start">
-                                    <div class="flex items-center gap-x-2">
+                                <th scope="col" colspan="2" class="px-6 py-3 text-center">
+                                    <div class="flex justify-center gap-x-2">
                                         <span class="text-xs font-semibold uppercase text-gray-900">
                                             ACTIONS
                                         </span>
@@ -78,34 +78,33 @@
                                 @foreach ($specialities as $speciality)
                                     <tr>
 
-                                        <td class="h-px w-72 whitespace-nowrap">
+                                        <td class="h-px w-72 whitespace-nowrap text-center">
                                             <div class="px-6 py-3">
                                                 <span
                                                     class="block text-sm font-semibold text-gray-900">{{ $loop->iteration }}</span>
 
                                             </div>
                                         </td>
-                                        <td class="h-px w-72 whitespace-nowrap">
+                                        <td class="h-px w-72 whitespace-nowrap text-center">
                                             <div class="px-6 py-3">
                                                 <span
                                                     class="block text-sm font-semibold text-gray-900">{{ $speciality->speciality_name }}</span>
 
                                             </div>
                                         </td>
+                                        <td class="size-px whitespace-nowrap text-center" colspan="2">
+                                            <div class="flex justify-evenly">
+                                                <a type="button" href="/admin/edit/{{ $speciality->id }}/speciality"
+                                                    class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                                    Edit
+                                                </a>
 
-                                        <td class="size-px whitespace-nowrap" colspan="2">
-                                            <a type="button" href="/admin/edit/{{ $speciality->id }}/speciality"
-                                                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                                Edit
-                                            </a>
-                                        </td>
-                                        <td class="size-px whitespace-nowrap">
-                                            <button type="button" wire:click="delete({{ $speciality->id }})"
-                                                wire:confirm="Are you sure you want to delete this speciality?"
-                                                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-red-500 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                                Delete
-                                            </button>
-
+                                                <button type="button" wire:click="delete({{ $speciality->id }})"
+                                                    wire:confirm="Are you sure you want to delete this speciality?"
+                                                    class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-red-500 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                                    Delete
+                                                </button>
+                                            </div>
                                         </td>
                                     </tr>
                                 @endforeach
