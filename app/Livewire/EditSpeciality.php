@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Specialities;
+use App\Models\Speciality;
 use Livewire\Component;
 
 class EditSpeciality extends Component
@@ -12,7 +13,7 @@ class EditSpeciality extends Component
 
     public function mount($speciality_id)
     {
-        $speciality = Specialities::findOrFail($speciality_id);
+        $speciality = Speciality::findOrFail($speciality_id);
 
         $this->speciality_id = $speciality->id;
         $this->name = $speciality->speciality_name;
@@ -24,7 +25,7 @@ class EditSpeciality extends Component
             'name' => 'required',
         ]);
 
-        $speciality = Specialities::findOrFail($this->speciality_id);
+        $speciality = Speciality::findOrFail($this->speciality_id);
         $speciality->speciality_name = $this->name;
         $speciality->save();
 

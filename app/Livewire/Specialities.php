@@ -28,8 +28,8 @@ class Specialities extends Component
 
     public function render()
     {
-        $specialities = ModelsSpecialities::all();
-
-        return view('livewire.specialities', ['specialities' => $specialities]);
+        return view('livewire.specialities', [
+            'specialities' => Speciality::latest()->paginate(10)
+        ]);
     }
 }
