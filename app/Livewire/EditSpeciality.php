@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Speciality;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 
 class EditSpeciality extends Component
@@ -21,7 +22,15 @@ class EditSpeciality extends Component
 
     public function update(): void
     {
-        $this->validate(['name' => 'required',]);
+        $this->authorize('update', $this->speciality);
+        $validated = $this->validate([
+            'name' => [
+                'required',
+                'string',
+                'max:255',
+                Rule::unique('specialities', 'speciality_name')->ignore($this->speciality->id),
+            ],
+        ]);
 
         $speciality = Speciality::findOrFail($this->speciality_id);
         $speciality->speciality_name = $this->name;
