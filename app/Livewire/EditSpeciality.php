@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Speciality;
-use Livewire\Attributes\Locked;
+use Illuminate\Contracts\View\View;
 use Livewire\Component;
 
 class EditSpeciality extends Component
@@ -11,7 +11,7 @@ class EditSpeciality extends Component
     public Speciality $speciality;
     public string $name = '';
 
-    public function mount(Speciality $speciality)
+    public function mount(Speciality $speciality): void
     {
         $speciality = Speciality::findOrFail($speciality_id);
 
@@ -19,7 +19,7 @@ class EditSpeciality extends Component
         $this->name = $speciality->speciality_name;
     }
 
-    public function update()
+    public function update(): void
     {
         $this->validate(['name' => 'required',]);
 
@@ -31,7 +31,7 @@ class EditSpeciality extends Component
         return redirect()->route('admin.specialities');
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.edit-speciality');
     }
