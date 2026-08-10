@@ -11,7 +11,7 @@ class EditSpeciality extends Component
     public Speciality $speciality;
     public string $name = '';
 
-    public function mount(int $speciality_id)
+    public function mount(Speciality $speciality)
     {
         $speciality = Speciality::findOrFail($speciality_id);
 
