@@ -3,12 +3,13 @@
 namespace App\Livewire;
 
 use App\Models\Speciality;
+use Livewire\Attributes\Locked;
 use Livewire\Component;
 
 class EditSpeciality extends Component
 {
-    public $name;
-    public $speciality_id;
+    public Speciality $speciality;
+    public string $name = '';
 
     public function mount(int $speciality_id)
     {
