@@ -4,7 +4,6 @@ namespace App\Livewire;
 
 use App\Models\Speciality;
 use Illuminate\Database\QueryException;
-use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
@@ -24,7 +23,7 @@ class Specialities extends Component
             return;
         }
 
-        session()->flash('message', 'Speciality deleted successfully');
+        session()->flash('success', 'Speciality deleted successfully');
         // $this->redirect('/admin/specialities', navigate: true); removed since its the same page
     }
 
