@@ -30,11 +30,10 @@ class EditSpeciality extends Component
                 'max:255',
                 Rule::unique('specialities', 'speciality_name')->ignore($this->speciality->id),
             ],
+            // 'name' => 'required|string|max:255|unique:specialities,speciality_name,' . $this->speciality->id,
         ]);
 
-        $speciality = Speciality::findOrFail($this->speciality_id);
-        $speciality->speciality_name = $this->name;
-        $speciality->save();
+        $this->speciality->speciality_name = trim($validated['name']);
 
         session()->flash('message', 'Speciality updated successfully');
         return redirect()->route('admin.specialities');
