@@ -14,4 +14,9 @@ class SpecialityPolicy
     {
         return $user->role === 'admin';
     }
+
+    public function update(User $user, Speciality $speciality): bool
+    {
+        return $user->role === 'admin';
+    }
 }
