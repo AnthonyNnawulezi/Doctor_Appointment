@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Speciality;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
 class EditSpeciality extends Component
@@ -13,9 +14,8 @@ class EditSpeciality extends Component
 
     public function mount(Speciality $speciality): void
     {
-        $speciality = Speciality::findOrFail($speciality_id);
-
-        $this->speciality_id = $speciality->id;
+        Gate::authorize('update', $speciality);
+        $this->speciality = $speciality;
         $this->name = $speciality->speciality_name;
     }
 
