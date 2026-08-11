@@ -80,44 +80,46 @@
                         </thead>
 
                         <tbody class="divide-y divide-table-line">
-                            @if (count($specialities) > 0)
-                                @foreach ($specialities as $speciality)
-                                    <tr>
+                            @forelse ($specialities as $speciality)
+                                <tr>
 
-                                        <td class="h-px w-72 whitespace-nowrap text-center">
-                                            <div class="px-6 py-3">
-                                                <span
-                                                    class="block text-sm font-semibold text-gray-900">{{ $loop->iteration }}</span>
+                                    <td class="h-px w-72 whitespace-nowrap text-center">
+                                        <div class="px-6 py-3">
+                                            <span
+                                                class="block text-sm font-semibold text-gray-900">{{ $loop->iteration }}</span>
 
-                                            </div>
-                                        </td>
-                                        <td class="h-px w-72 whitespace-nowrap text-center">
-                                            <div class="px-6 py-3">
-                                                <span
-                                                    class="block text-sm font-semibold text-gray-900">{{ $speciality->speciality_name }}</span>
+                                        </div>
+                                    </td>
+                                    <td class="h-px w-72 whitespace-nowrap text-center">
+                                        <div class="px-6 py-3">
+                                            <span
+                                                class="block text-sm font-semibold text-gray-900">{{ $speciality->speciality_name }}</span>
 
-                                            </div>
-                                        </td>
-                                        <td class="size-px whitespace-nowrap text-center" colspan="2">
-                                            <div class="flex justify-evenly">
-                                                <a type="button"
-                                                    href="{{ route('admin.edit-speciality', $speciality->id) }}/speciality}}"
-                                                    class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                                    Edit
-                                                </a>
+                                        </div>
+                                    </td>
+                                    <td class="size-px whitespace-nowrap text-center" colspan="2">
+                                        <div class="flex justify-evenly">
+                                            <a type="button"
+                                                href="{{ route('admin.edit-speciality', $speciality->id) }}/speciality}}"
+                                                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                                Edit
+                                            </a>
 
-                                                <button type="button" wire:click="delete({{ $speciality->id }})"
-                                                    wire:confirm="Are you sure you want to delete this speciality?"
-                                                    class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-red-500 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
-                                                    Delete
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            @else
-                                <p>No data found</p>
-                            @endif
+                                            <button type="button" wire:click="delete({{ $speciality->id }})"
+                                                wire:confirm="Are you sure you want to delete this speciality?"
+                                                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-red-500 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="3">
+                                        No specialities found.
+                                    </td>
+                                </tr>
+                            @endforelse
                         </tbody>
                     </table>
                     <!-- End Table -->
