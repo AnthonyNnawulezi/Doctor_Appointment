@@ -23,6 +23,7 @@ class EditSpeciality extends Component
     public function update(): void
     {
         $this->authorize('update', $this->speciality);
+
         $validated = $this->validate([
             'name' => [
                 'required',

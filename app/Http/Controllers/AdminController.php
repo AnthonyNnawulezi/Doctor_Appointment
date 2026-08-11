@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Specialities;
+use App\Models\Speciality;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -34,6 +35,7 @@ class AdminController extends Controller
 
     public function editSpeciality($speciality_id)
     {
-        return view('admin.edit-speciality', compact('speciality_id'));
+        $speciality = Speciality::findOrFail($speciality_id);
+        return view('admin.edit-speciality', compact('speciality'));
     }
 }
