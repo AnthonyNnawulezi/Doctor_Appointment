@@ -35,7 +35,7 @@
 
 
                                 <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-primary border border-primary-line text-primary-foreground hover:bg-primary-hover focus:outline-none focus:bg-primary-focus disabled:opacity-50 disabled:pointer-events-none"
-                                    href="/admin/speciality/create">
+                                    href="{{ route('admin.speciality') }}">
                                     <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -100,7 +100,8 @@
                                         </td>
                                         <td class="size-px whitespace-nowrap text-center" colspan="2">
                                             <div class="flex justify-evenly">
-                                                <a type="button" href="/admin/edit/{{ $speciality->id }}/speciality"
+                                                <a type="button"
+                                                    href="{{ route('admin.edit-speciality', $speciality->id) }}/speciality}}"
                                                     class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
                                                     Edit
                                                 </a>
