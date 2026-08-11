@@ -10,7 +10,7 @@ class SpecialityForm extends Component
 {
     public $name = "";
 
-    public function save()
+    public function save(): void
     {
         $this->authorize('create', Speciality::class);
 
@@ -21,6 +21,10 @@ class SpecialityForm extends Component
                 'max:255',
                 Rule::unique('specialities', 'speciality_name'),
             ],
+        ]);
+
+        Speciality::create([
+            'speciality_name' => trim($validated['name']),
         ]);
 
         $speciality = new Speciality();
