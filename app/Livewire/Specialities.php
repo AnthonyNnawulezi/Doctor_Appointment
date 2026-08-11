@@ -6,10 +6,11 @@ use App\Models\Speciality;
 use Illuminate\Database\QueryException;
 use Livewire\Component;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Livewire\WithPagination;
 
 class Specialities extends Component
 {
-    use AuthorizesRequests;
+    use AuthorizesRequests, WithPagination;
 
     public function delete(Speciality $speciality): void
     {

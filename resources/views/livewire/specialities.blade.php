@@ -100,7 +100,7 @@
                                     <td class="size-px whitespace-nowrap text-center" colspan="2">
                                         <div class="flex justify-evenly">
                                             <a type="button"
-                                                href="{{ route('admin.edit-speciality', $speciality->id) }}/speciality}}"
+                                                href="{{ route('admin.edit-speciality', $speciality) }}"
                                                 class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-blue-600 border border-none text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">
                                                 Edit
                                             </a>
@@ -129,32 +129,18 @@
                         class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-t border-gray-200">
                         <div>
                             <p class="text-sm text-gray-600">
-                                <span class="font-semibold text-gray-900">12</span> results
+                                Showing
+                                <span class="font-semibold text-gray-900">{{ $specialities->firstItem() ?? 0 }}</span>
+                                to
+                                <span class="font-semibold text-gray-900">{{ $specialities->lastItem() ?? 0 }}</span>
+                                of
+                                <span class="font-semibold text-gray-900">{{ $specialities->total() }}</span>
+                                results
                             </p>
                         </div>
 
                         <div>
-                            <div class="inline-flex gap-x-2">
-                                <button type="button"
-                                    class="py-1.5 px-2.5 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg bg-white border border-gray-200 text-layer-foreground shadow-sm hover:bg-white-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-white-focus">
-                                    <svg class="shrink-0 size-4 -ms-1" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="m15 18-6-6 6-6" />
-                                    </svg>
-                                    Prev
-                                </button>
-
-                                <button type="button"
-                                    class="py-1.5 px-2.5 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg bg-white border border-gray-200 text-layer-foreground shadow-sm hover:bg-white-hover disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-white-focus">
-                                    Next
-                                    <svg class="shrink-0 size-4 -me-1" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                </button>
-                            </div>
+                            {{ $specialities->links() }}
                         </div>
                     </div>
                     <!-- End Footer -->
