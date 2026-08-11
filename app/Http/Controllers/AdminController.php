@@ -31,9 +31,9 @@ class AdminController extends Controller
         return view('admin.speciality-create');
     }
 
-    public function editSpeciality(int $speciality_id)
+    public function editSpeciality(Speciality $speciality)
     {
-        $speciality = Speciality::findOrFail($speciality_id);
+        // $speciality = Speciality::findOrFail($speciality_id);
         return view('admin.edit-speciality', compact('speciality'));
     }
 }

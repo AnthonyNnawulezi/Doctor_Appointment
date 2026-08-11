@@ -4,12 +4,15 @@ namespace App\Livewire;
 
 use App\Models\Speciality;
 use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\Rule;
 use Livewire\Component;
 
 class EditSpeciality extends Component
 {
+    use AuthorizesRequests;
+
     public Speciality $speciality;
     public string $name = '';
 
