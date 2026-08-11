@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\Specialities;
+use App\Models\Speciality;
 use Livewire\Component;
 
 class SpecialityForm extends Component
@@ -15,7 +15,7 @@ class SpecialityForm extends Component
             'name' => 'required',
         ]);
 
-        $speciality = new Specialities;
+        $speciality = new Speciality();
         $speciality->speciality_name = $this->name;
         $speciality->save();
 
