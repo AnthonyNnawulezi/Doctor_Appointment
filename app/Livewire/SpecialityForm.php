@@ -27,13 +27,9 @@ class SpecialityForm extends Component
             'speciality_name' => trim($validated['name']),
         ]);
 
-        $speciality = new Speciality();
-        $speciality->speciality_name = $this->name;
-        $speciality->save();
-
         session()->flash('message', "Speciality created successfully");
 
-        return redirect('/admin/specialities');
+        $this->redirect(route('admin.specialities'), navigate: true);
     }
 
     public function render()
