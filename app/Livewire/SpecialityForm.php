@@ -3,11 +3,14 @@
 namespace App\Livewire;
 
 use App\Models\Speciality;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Validation\Rule;
 use Livewire\Component;
 
 class SpecialityForm extends Component
 {
+    use AuthorizesRequests;
+
     public $name = "";
 
     public function save(): void
@@ -27,7 +30,7 @@ class SpecialityForm extends Component
             'speciality_name' => trim($validated['name']),
         ]);
 
-        session()->flash('message', "Speciality created successfully");
+        session()->flash('success', "Speciality created successfully");
 
         $this->redirect(route('admin.specialities'), navigate: true);
     }

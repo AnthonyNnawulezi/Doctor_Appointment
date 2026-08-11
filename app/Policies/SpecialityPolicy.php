@@ -10,12 +10,17 @@ class SpecialityPolicy
     /**
      * Create a new policy instance.
      */
-    public function delete(User $user, Speciality $speciality): bool
+    public function create(User $user): bool
     {
         return $user->role === 'admin';
     }
 
-    public function update(User $user, Speciality $speciality): bool
+    public function delete(User $user): bool
+    {
+        return $user->role === 'admin';
+    }
+
+    public function update(User $user): bool
     {
         return $user->role === 'admin';
     }
