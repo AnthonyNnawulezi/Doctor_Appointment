@@ -17,7 +17,7 @@ class EditSpeciality extends Component
     {
         Gate::authorize('update', $speciality);
         $this->speciality = $speciality;
-        $this->name = $speciality->speciality_name;
+        $this->name = $speciality->speciality_name ?? "";
     }
 
     public function update(): void
