@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Speciality;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 
 class SpecialityForm extends Component
@@ -11,8 +12,15 @@ class SpecialityForm extends Component
 
     public function save()
     {
-        $this->validate([
-            'name' => 'required',
+        $this->authorize('create', Speciality::class);
+
+        $validated = $this->validate([
+            'name' => [
+                'required',
+                'string',
+                'max:255',
+                Rule::unique('specialities', 'speciality_name'),
+            ],
         ]);
 
         $speciality = new Speciality();
