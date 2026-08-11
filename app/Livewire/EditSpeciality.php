@@ -38,7 +38,7 @@ class EditSpeciality extends Component
         $this->speciality->update(['speciality_name' => $this->name]);
 
         session()->flash('success', 'Speciality updated successfully');
-        $this->redirectRoute(route('admin.specialities'), navigate: true);
+        $this->redirectRoute('admin.specialities', navigate: true);
     }
 
     public function render(): View
