@@ -37,7 +37,7 @@ new class extends Component {
                         <x-nav-link :href="route('doctor.dashboard')" :active="request()->routeIs('doctor.dashboard')" wire:navigate>
                             {{ __('Doctor Dashboard') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('doctor.doctor-listings')" :active="request()->routeIs('doctor-listings')" wire:navigate>
+                        <x-nav-link :href="route('doctor.doctors')" :active="request()->routeIs('doctor.doctors')" wire:navigate>
                             {{ __('Doctors') }}
                         </x-nav-link>
                     @elseif (auth()->user()?->role === 'admin')
@@ -108,9 +108,28 @@ new class extends Component {
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
-                {{ __('Dashboard') }}
-            </x-responsive-nav-link>
+            @if ($role === 'patient')
+                <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
+                    {{ __('Patient Dashboard') }}
+                </x-responsive-nav-link>
+            @elseif ($role === 'doctor')
+                <x-responsive-nav-link :href="route('doctor.dashboard')" :active="request()->routeIs('doctor.dashboard')" wire:navigate>
+                    {{ __('Doctor Dashboard') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('doctor.doctor-listings')" :active="request()->routeIs('doctor.doctor-listings')" wire:navigate>
+                    {{ __('Doctors') }}
+                </x-responsive-nav-link>
+            @elseif ($role === 'admin')
+                <x-responsive-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')" wire:navigate>
+                    {{ __('Admin Dashboard') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('admin.doctors')" :active="request()->routeIs('admin.doctors')" wire:navigate>
+                    {{ __('Doctors') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('admin.specialities')" :active="request()->routeIs('admin.specialities')" wire:navigate>
+                    {{ __('Specialities') }}
+                </x-responsive-nav-link>
+            @endif
         </div>
 
         <!-- Responsive Settings Options -->
@@ -135,4 +154,5 @@ new class extends Component {
             </div>
         </div>
     </div>
+
 </nav>
